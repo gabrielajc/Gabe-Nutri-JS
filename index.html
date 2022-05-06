@@ -7,6 +7,8 @@
 
   <title>Gabe NutriJs</title>
 
+  <script src="https://kit.fontawesome.com/8d7cdc48d7.js" crossorigin="anonymous"></script>
+
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -20,16 +22,24 @@
   </header>
 
   <main>
-    <section class="container">
+<!-- 
+    <div class="bolatres"></div>
+   <div class="bolaquatro"></div> -->
+
+    <section class="container table">
+  
       <h2>Pacientes</h2>
-      <div class="frase">
-         <p>Tabela com calculo de IMC dos pacientes. </p>   
-      </div>
-      <div class="search">
-        <input class="searchTerm" type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente" />
-        <label type="submit" class="searchButton">
-          <i class="fa fa-search"></i>
-       </label>
+      <div class="introtable">
+        <div class="frase">
+          <p>Tabela com calculo de IMC dos pacientes.</p>
+        </div>
+        <div class="search">
+          <input class="search-txt" type="text" name="filtro" id="filtrar-tabela"
+            placeholder="Digite o nome do paciente"/>
+          <a href="#" class="search-btn">
+            <i class="fa-solid fa-magnifying-glass">
+            </i></a>
+        </div>
       </div>
       <table>
         <thead>
@@ -92,9 +102,16 @@
     </section>
   </main>
 
-  <section class="container">
+   <div class="bolaum"></div>
+   <div class="boladois"></div>
+
+  <section class="container confloat">
+ 
     <h2 id="titulo-form">Cadastre-se</h2>
-    <p>Insira seus dados e seja um paciente. Você pode ver seus nome na tabela e calcular o seu IMC automáticamente</p>
+    <p class="frase">
+      Insira seus dados e seja um paciente. Você pode ver seus nome na tabela
+      e calcular o seu IMC automáticamente.
+    </p>
 
     <ul id="mensagens-erro"></ul>
 
@@ -131,6 +148,16 @@
       </button>
     </form>
   </section>
+
+  <footer>
+    <div class="container" style="margin: 50px;">
+      .fh
+      <br>
+      .hgfhf
+      <br>
+      .fgh
+    </div>
+  </footer>
 
   <script src="js/calcula-imc.js"></script>
   <script src="js/form.js"></script>

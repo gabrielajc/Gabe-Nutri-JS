@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
 * {
 	box-sizing: border-box;
 }
@@ -55,14 +57,17 @@ section h2 {
 	padding-bottom: 0.2em;
 	border-bottom: 1px solid rgb(45, 143, 182);
 	margin-bottom: 0.5em;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-	color: sienna;
+	font-family: 'Rozha One', serif;
+	text-shadow: 1px 1px 1px #000;
+	color:rgb(199, 109, 0);
 }
+
 
 table {
 	width: 100%;
 	margin-bottom: 0.5em;
 	table-layout: fixed;
+	z-index: 2;
 }
 
 td,
@@ -113,8 +118,8 @@ button {
 	font-weight: 600;
 	cursor: pointer;
 	color: #fff;
-	background-color: rgba(139, 0, 0, 0.74);
-	border-color: #2b0202;
+	background-color:forestgreen;
+	border-color:darkgreen;
 	width: 15%;
 	display: block;
 	clear: both;
@@ -151,6 +156,7 @@ main {
 	margin-bottom: 45px;
 }
 
+
 #mensagens-erro {
 	color: red;
 	margin-bottom: 10px;
@@ -166,6 +172,7 @@ main {
 	font-style: italic;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 #filtrar-tabela {
@@ -178,53 +185,115 @@ main {
 	display: none;
 }
 
-
-.searchButton {
-	width: 40px;
-	height: 35px;
-	border: 1px solid #06af47;
-	background: #00cc6d;
-	text-align: center;
-	color: #fff;
-	border-radius: 0 5px 5px 0;
-	cursor: pointer;
+.frase{
+	display: inline-block;
+	flex: 1;
 	font-size: 20px;
-  }
+	color: rgba(0, 0, 0, 0.671);
+}
 
-  .searchTerm:focus{
-	color: #06af47;
-  }
-  .searchTerm {
-	width: 100%;
-	border: 3px solid #06af47;
-	border-right: none;
-	padding: 5px;
-	height: 20px;
-	border-radius: 5px 0 0 5px;
-	outline: none;
-	color: #9DBFAF;
-  }
-  .search {
-	width: 100%;
-	position: relative;
+
+.introtable{
+	justify-content: space-between;
 	display: flex;
-  }  
+	box-sizing: border-box;
+}
 
-  #DivLateral{
-	position:relative;
-	float: left;
-	border-width:2px;
-	width:300px;
-	height: 700px;
-	background-color: peachpuff;
-	}
+.search{
+    transform: translate(-0%,-25%);
+    background: white;
+	border-color: green;
+	border-width: medium;
+	border-style: solid;
+    height: 40px;
+    border-radius: 40px;
+	padding-left: 10px;
 	
-	#DivA{
+}
+.search-btn{
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: 2s;
 	position: relative;
+	bottom: 10%;
+	left: 2px;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width:0px;
+}
+
+.confloat {
+	padding: 2%;
+	box-shadow: 0 0 1em rgba(0,0, .212);
+	z-index: 2;
+	background-color: white;
+	height: 400px;
+	margin-left: 20%;
+	margin-right: 20%;
+	position: absolute;
+}
+
+form{
+	margin-top: 30px;
+}
+
+table th{
+	background-color: rgb(199, 109, 0);
+	color: white;
+}	
+
+.bolaum{
+	background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLU0A_8rs7g6_UMZLCw5cesZP9JyB1mbQpkRYjoLpApci9qnWcxketMhXZm1kz1ETxsrBHBSCzkCRsD-LOXDnf9qTV-rmH5lHO6cVoIqEjEyIMcJzQWtBPURWUx9Vyt-jm_Xax8xymcX9cSqev0Z-ApkiQ=s800-no?authuser=0);
+	width: 40%;
+	height: 800px;
+	bottom: -470px;
 	float: left;
-	border-width:2px;
-	width:auto;
-	height: auto;
-	left:300px;
+
+}
+
+.boladois{
+	background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLXQqavM27SO97EZMSvGB66TUsxqGhyJFJe5LiF_HoO3QD87T_Hf84aHZ3c-LBXviB1Tq9SW4teKQe6MM9c0QwN4rDot_CgMfEL-781iBEGLCgsMGtKNMDH6pUQRQQ6CGFx5f1WRAh9uc3PSfdShJ_vqpg=s800-no?authuser=0);
+	background-position: right;
+	width: 40%;
+	height: 800px;
+	bottom: -470px;
+	float: right;
 	
-	}
+
+}
+
+.bolatres{
+	background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLWb4ijxsNbga2WSDq6Ct52WX1SF3zNtgO2oPCspqOLpy4ayxqyxVNoT2nLKT-UfaT-jtWzwPbQz_Tzz0lH0rOPTy7ZUxUzg3FU4AqTkZweK5ksSP3QJ6xsEVkp8e61yLe3lHEYNH7C2E8SUfeJjbTR2-A=s800-no?authuser=00);
+	background-position: center;
+	background-size: 100%;
+	width: 800px;
+	height: 500px;
+	bottom: 400px;
+	float: left;
+
+}
+
+.bolaquatro{
+	background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLUhcmX5WOFMxbqhP2gYd9ouHv8BtNnFsFJUnzIIBXsTLCJyWp73Wjmyb5qYnsxVcqo6EoZge0YJCP2OYAc9Q52lvaEP8tb0utgMj4ZWz36qBnQZ0lDNH8ZShmDhScfNxcwWwbpyy8Y53w-KDTBDeGTb_w=s800-no?authuser=0);
+	background-position: center;
+	background-size: 100%;
+	width: 500px;
+	height: 500px;
+	bottom: 240px;
+	float: right;
+
+}
+
