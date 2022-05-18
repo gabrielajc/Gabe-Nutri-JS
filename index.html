@@ -1,168 +1,187 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <title>Gabe NutriJs</title>
 
-  <title>Gabe NutriJs</title>
+    <script
+      src="https://kit.fontawesome.com/8d7cdc48d7.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/8d7cdc48d7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="css/reset.css" />
-  <link rel="stylesheet" type="text/css" href="css/index.css" />
-</head>
-
-<body>
-  <header>
-    <div class="container header">
-      <h2 class="titulo"></h2>
-    </div>
-  </header>
-
-  <main>
-<!-- 
-    <div class="bolatres"></div>
-   <div class="bolaquatro"></div> -->
-
-    <section class="container table">
-  
-      <h2>Pacientes</h2>
-      <div class="introtable">
-        <div class="frase">
-          <p>Tabela com calculo de IMC dos pacientes.</p>
-        </div>
-        <div class="search">
-          <input class="search-txt" type="text" name="filtro" id="filtrar-tabela"
-            placeholder="Digite o nome do paciente"/>
-          <a href="#" class="search-btn">
-            <i class="fa-solid fa-magnifying-glass">
-            </i></a>
-        </div>
+  <body>
+    <header>
+      <div class="container header">
+        <h2 class="titulo"></h2>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Peso(kg)</th>
-            <th>Altura(m)</th>
-            <th>Gordura Corporal(%)</th>
-            <th>IMC</th>
-          </tr>
-        </thead>
+    </header>
 
-        <tbody id="tabela-pacientes">
-          <tr class="paciente" id="primeiro-paciente">
-            <td class="info-nome">Paulo</td>
-            <td class="info-peso">100</td>
-            <td class="info-altura">2.00</td>
-            <td class="info-gordura">10</td>
-            <td class="info-imc">0</td>
-          </tr>
+    <main>
 
-          <tr class="paciente">
-            <td class="info-nome">João</td>
-            <td class="info-peso">80</td>
-            <td class="info-altura">1.72</td>
-            <td class="info-gordura">40</td>
-            <td class="info-imc">0</td>
-          </tr>
+      <section class="container table">
+        <h2>Pacientes</h2>
+        <div class="introtable">
+          <div class="frase">
+            <p>Tabela com calculo de IMC dos pacientes.</p>
+          </div>
+          <div class="search">
+            <input
+              class="search-txt"
+              type="text"
+              name="filtro"
+              id="filtrar-tabela"
+              placeholder="Digite o nome do paciente"
+            />
+            <a href="#" class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"> </i
+            ></a>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Peso(kg)</th>
+              <th>Altura(m)</th>
+              <th>Gordura Corporal(%)</th>
+              <th>IMC</th>
+            </tr>
+          </thead>
 
-          <tr class="paciente">
-            <td class="info-nome">Erica</td>
-            <td class="info-peso">54</td>
-            <td class="info-altura">1.64</td>
-            <td class="info-gordura">14</td>
-            <td class="info-imc">0</td>
-          </tr>
+          <tbody id="tabela-pacientes">
+            <tr class="paciente" id="primeiro-paciente">
+              <td class="info-nome">Paulo</td>
+              <td class="info-peso">100</td>
+              <td class="info-altura">2.00</td>
+              <td class="info-gordura">10</td>
+              <td class="info-imc">0</td>
+            </tr>
 
-          <tr class="paciente">
-            <td class="info-nome">Douglas</td>
-            <td class="info-peso">85</td>
-            <td class="info-altura">1.73</td>
-            <td class="info-gordura">24</td>
-            <td class="info-imc">0</td>
-          </tr>
+            <tr class="paciente">
+              <td class="info-nome">João</td>
+              <td class="info-peso">80</td>
+              <td class="info-altura">1.72</td>
+              <td class="info-gordura">40</td>
+              <td class="info-imc">0</td>
+            </tr>
 
-          <tr class="paciente">
-            <td class="info-nome">Tatiana</td>
-            <td class="info-peso">46</td>
-            <td class="info-altura">1.55</td>
-            <td class="info-gordura">19</td>
+            <tr class="paciente">
+              <td class="info-nome">Erica</td>
+              <td class="info-peso">54</td>
+              <td class="info-altura">1.64</td>
+              <td class="info-gordura">14</td>
+              <td class="info-imc">0</td>
+            </tr>
 
-            <td class="info-imc">0</td>
-          </tr>
-        </tbody>
-      </table>
+            <tr class="paciente">
+              <td class="info-nome">Douglas</td>
+              <td class="info-peso">85</td>
+              <td class="info-altura">1.73</td>
+              <td class="info-gordura">24</td>
+              <td class="info-imc">0</td>
+            </tr>
 
-      <p class="removefrase">
-        Para remover um paciente dê um duplo clique na linha desejada
+            <tr class="paciente">
+              <td class="info-nome">Tatiana</td>
+              <td class="info-peso">46</td>
+              <td class="info-altura">1.55</td>
+              <td class="info-gordura">19</td>
+
+              <td class="info-imc">0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="removefrase">
+          Para remover um paciente dê um duplo clique na linha desejada
+        </p>
+      </section>
+    </main>
+
+    <div class="bolaum">
+      
+
+    <section class="container confloat">
+      <h2 id="titulo-form">Cadastre-se</h2>
+      <p class="frase">
+        Insira seus dados e seja um paciente. Você pode ver seus nome na tabela
+        e calcular o seu IMC automáticamente.
       </p>
+
+      <ul id="mensagens-erro"></ul>
+
+      <form id="form-adiciona">
+        <div class="">
+          <label for="nome">Nome:</label>
+
+          <input
+            id="nome"
+            name="nome"
+            type="text"
+            placeholder="digite o nome do seu paciente"
+            class="campo"
+          />
+        </div>
+
+        <div class="grupo">
+          <label for="peso">Peso:</label>
+
+          <input
+            id="peso"
+            name="peso"
+            type="text"
+            placeholder="digite o peso do seu paciente"
+            class="campo campo-medio"
+          />
+        </div>
+
+        <div class="grupo">
+          <label for="altura">Altura:</label>
+
+          <input
+            id="altura"
+            name="altura"
+            type="text"
+            placeholder="digite a altura do seu paciente"
+            class="campo campo-medio"
+          />
+        </div>
+
+        <div class="grupo">
+          <label for="gordura">% de Gordura:</label>
+
+          <input
+            id="gordura"
+            type="text"
+            placeholder="digite a porcentagem de gordura do seu paciente"
+            class="campo campo-medio"
+          />
+        </div>
+
+        <button id="adicionar-paciente" class="botao bto-principal">
+          Adicionar
+        </button>
+      </form>
     </section>
-  </main>
-
-   <div class="bolaum"></div>
-   <div class="boladois"></div>
-
-  <section class="container confloat">
- 
-    <h2 id="titulo-form">Cadastre-se</h2>
-    <p class="frase">
-      Insira seus dados e seja um paciente. Você pode ver seus nome na tabela
-      e calcular o seu IMC automáticamente.
-    </p>
-
-    <ul id="mensagens-erro"></ul>
-
-    <form id="form-adiciona">
-      <div class="">
-        <label for="nome">Nome:</label>
-
-        <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo" />
-      </div>
-
-      <div class="grupo">
-        <label for="peso">Peso:</label>
-
-        <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente"
-          class="campo campo-medio" />
-      </div>
-
-      <div class="grupo">
-        <label for="altura">Altura:</label>
-
-        <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente"
-          class="campo campo-medio" />
-      </div>
-
-      <div class="grupo">
-        <label for="gordura">% de Gordura:</label>
-
-        <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente"
-          class="campo campo-medio" />
-      </div>
-
-      <button id="adicionar-paciente" class="botao bto-principal">
-        Adicionar
-      </button>
-    </form>
-  </section>
-
-  <footer>
-    <div class="container" style="margin: 50px;">
-      .fh
-      <br>
-      .hgfhf
-      <br>
-      .fgh
     </div>
-  </footer>
+    <footer>
+      <div class="footer">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Tempora ipsam saepe reiciendis quasi laudantium labore quas numquam quidem dignissimos ducimus.
+         Necessitatibus exercitationem nulla cum fuga, ipsam natus esse et. Repellendus.
+      </div>
+    </footer>
 
-  <script src="js/calcula-imc.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/remover-paciente.js"></script>
-  <script src="js/filtra.js"></script>
-</body>
-
+    <script src="js/calcula-imc.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/remover-paciente.js"></script>
+    <script src="js/filtra.js"></script>
+  </body>
 </html>
