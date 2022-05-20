@@ -1,5 +1,7 @@
 <h1 align="center"> Gabe NutriJS Site </h1> 
-<p align="center"> <img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=#008000&style=for-the-badge&logo=ghost"/> <img src="https://img.shields.io/github/license/gabrielajc/massotherapy?color=blue"/> </p>
+<p align="center"> <img src="https://img.shields.io/static/v1?label=Status&message=Finished&color=#008000&style=for-the-badge&logo=ghost"/> <img src="https://img.shields.io/github/license/gabrielajc/Gabe-Nutri-JS"/> 
+<img src="https://badges.aleen42.com/src/javascript.svg"/> 
+</p>
 
 <h6> Status: Concluido :heavy_check_mark: </h6>
 
