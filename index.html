@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-
-    <title>Gabe NutriJs</title>
-
     <script
       src="https://kit.fontawesome.com/8d7cdc48d7.js"
       crossorigin="anonymous"
     ></script>
 
+    <meta charset="UTF-8" />
+    <title>Aparecida Nutrição</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
-
   <body>
     <header>
-      <div class="container header">
-        <h2 class="titulo"></h2>
-      </div>
+      <div class="container header"></div>
     </header>
-
     <main>
-
       <section class="container table">
-        <h2>Pacientes</h2>
+        <h2>Dados dos pacientes</h2>
+
         <div class="introtable">
           <div class="frase">
             <p>Tabela com calculo de IMC dos pacientes.</p>
@@ -44,6 +37,7 @@
             ></a>
           </div>
         </div>
+
         <table>
           <thead>
             <tr>
@@ -54,7 +48,6 @@
               <th>IMC</th>
             </tr>
           </thead>
-
           <tbody id="tabela-pacientes">
             <tr class="paciente" id="primeiro-paciente">
               <td class="info-nome">Paulo</td>
@@ -87,28 +80,30 @@
               <td class="info-gordura">24</td>
               <td class="info-imc">0</td>
             </tr>
-
             <tr class="paciente">
               <td class="info-nome">Tatiana</td>
               <td class="info-peso">46</td>
               <td class="info-altura">1.55</td>
               <td class="info-gordura">19</td>
-
               <td class="info-imc">0</td>
             </tr>
           </tbody>
         </table>
+		<p class="removefrase">
+			Para remover um paciente dê um duplo clique na linha desejada
+		  </p>
+  
+        <span id="erro-ajax" class="invisivel"
+          >Erro ao buscar os pacientes</span
+        >
 
-        <p class="removefrase">
-          Para remover um paciente dê um duplo clique na linha desejada
-        </p>
+        <button id="buscar-pacientes" class="botao bto-principal">
+          Buscar Pacientes
+        </button>
       </section>
     </main>
 
-    <div class="bolaum">
-      
-
-    <section class="container confloat">
+    <section class="container">
       <h2 id="titulo-form">Cadastre-se</h2>
       <p class="frase">
         Insira seus dados e seja um paciente. Você pode ver seus nome na tabela
@@ -116,11 +111,9 @@
       </p>
 
       <ul id="mensagens-erro"></ul>
-
       <form id="form-adiciona">
-        <div class="">
+        <div class="nome">
           <label for="nome">Nome:</label>
-
           <input
             id="nome"
             name="nome"
@@ -129,10 +122,8 @@
             class="campo"
           />
         </div>
-
         <div class="grupo">
           <label for="peso">Peso:</label>
-
           <input
             id="peso"
             name="peso"
@@ -141,10 +132,8 @@
             class="campo campo-medio"
           />
         </div>
-
         <div class="grupo">
           <label for="altura">Altura:</label>
-
           <input
             id="altura"
             name="altura"
@@ -153,10 +142,8 @@
             class="campo campo-medio"
           />
         </div>
-
         <div class="grupo">
           <label for="gordura">% de Gordura:</label>
-
           <input
             id="gordura"
             type="text"
@@ -170,12 +157,24 @@
         </button>
       </form>
     </section>
-    </div>
     <footer>
       <div class="footer">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Tempora ipsam saepe reiciendis quasi laudantium labore quas numquam quidem dignissimos ducimus.
-         Necessitatibus exercitationem nulla cum fuga, ipsam natus esse et. Repellendus.
+        <h3>Autor: Gabriela Clemente</h3>
+        <ul class="social">
+          <li>
+            <a href="https://github.com/gabrielajc" class="fa fa-github-square">
+              GitHub: gabrielajc</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gabeclemente/"
+              class="fa fa-linkedin-square"
+            >
+              Linkedin: gabeclemente
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
 
@@ -183,5 +182,6 @@
     <script src="js/form.js"></script>
     <script src="js/remover-paciente.js"></script>
     <script src="js/filtra.js"></script>
+    <script src="js/buscar-pacientes.js"></script>
   </body>
 </html>

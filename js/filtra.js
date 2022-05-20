@@ -10,11 +10,10 @@ campoFiltro.addEventListener("input", function() {
             var nome = tdNome.textContent;
             var expressao = new RegExp(this.value, "i");
 
-            // Adição aqui
-            if (expressao.test(nome)) {
-                paciente.classList.remove("invisivel");
-            } else {
+            if (!expressao.test(nome)) {
                 paciente.classList.add("invisivel");
+            } else {
+                paciente.classList.remove("invisivel");
             }
         }
     } else {
